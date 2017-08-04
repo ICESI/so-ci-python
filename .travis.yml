@@ -1,8 +1,13 @@
 sudo: false
 language: python
+notifications:
+  email: false
+  slack:
+    matrix:
+    - icesi-dbarragan:Kn8wmrbY8QxYuoqfa09rG2zg
+    rooms:
+      secure: rBBbKR7VpvrEKJm4QaQIj9yxvUq+pxrTyCMdDXQYooTy6es2l4oYuP5cKbUWPk+T2SGNIVdf3dN2OtZoKTH26VBhtg/zcYcEOsP+ZBjXzDhha4GEaRUhbR5jFjnhD16WfnZLfIO/aVx66aPJ/MriIvSUmrN8JaEqPCOK+J8P9s56Rr4d1I+K7ccPGapVF3LkADL9cGp1YAL+LE1+BTSQqPVNcB1ipN7686YZhVYtkVugttEduhkV9VizIEd65LN42iJrZhCKZ+4663o1e23ywia+3hy001sx0+cG2R8Ep2/OcKxYHGF1RWmX3mOhOqbTIBhqZJ7H8fUhIB+0/qkXNf5eXEzUSXOt1p/EYLhby8VvvfOiy7w3svEhT9fEccVgope1avOB7gpyavLd763hIXm0IyStg0KuntwRcZdd78FqufERBtfVHnUo7Q+aZvF4QXD8Gie7eNveWvkRp+pwu6NSV7Oj0C3TEVLu+h+H5xMVEuNM6DhTnFu+W9qFmZpm0xjc5hZingeXtIIXGNVODcAjx3q3zochOqE4jgynxr4N5xsuVgdENjWB0PePmh87VYlp9GVFMtsU927vdNf2bz/2L84iKFq+kTd9Y7tN4LOtZpmCGlNodegAHpnOeCzbGUdZM7QgIBdzIKcHQsRzOEb6RoLtOscsc9H/Y5vlaYM=
 python:
-  - "3.6"
-# command to install dependencies
+- '3.6'
 install: pip install tox-travis
-# command to run tests
 script: tox
